@@ -1,4 +1,4 @@
-package Banco;
+package main.Banco;
 
 import java.sql.Array;
 import java.sql.Blob;
@@ -361,7 +361,7 @@ public class ConexaoSQLite {
     public boolean conectar() {
 
         try {
-            String url = "jdbc:sqlite:FigaroDB.db";
+            String url = "jdbc:sqlite:CALCBD.db";
 
             this.conexao = DriverManager.getConnection(url);
             System.out.println("Conectado");
