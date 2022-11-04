@@ -1,5 +1,5 @@
 package main.controller;
-import java.util.Locale;
+
 import main.Banco.ConexaoSQLite;
 import main.modelo.Ipca;
 import main.modelo.Juros_poup;
@@ -27,7 +27,7 @@ public class BancoController {
                 teste = resultSet.getString("variação_mensal1");
             ipca.setVariação_mensal1(Double.parseDouble(teste.replace(",",".")));
                teste = resultSet.getString("UTILIZAR");
-            ipca.setUtilizar(Double.parseDouble(teste.replace(",",".")));
+            ipca.setUtilizar(Float.parseFloat(teste.replace(",",".")));
             }
             catch (Exception e){
 
