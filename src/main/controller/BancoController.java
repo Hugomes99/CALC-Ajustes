@@ -27,7 +27,7 @@ public class BancoController {
                 teste = resultSet.getString("variação_mensal1");
             ipca.setVariação_mensal1(Double.parseDouble(teste.replace(",",".")));
                teste = resultSet.getString("UTILIZAR");
-            ipca.setUtilizar(Float.parseFloat(teste.replace(",",".")));
+            ipca.setUtilizar(Double.parseDouble(teste.replace(",",".")));
             }
             catch (Exception e){
 
